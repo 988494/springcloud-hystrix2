@@ -1,4 +1,4 @@
-# Hystrix熔断降级
+# Hystrix 熔断降级
 ## 1.Hystrix 熔断
 ## 配置：
 	windows中配置host文件中的域名解析，在C:\Windows\System32\drivers\etc\HOSTS中添加如下配置<br>
