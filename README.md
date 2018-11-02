@@ -28,7 +28,7 @@ CREATE TABLE `dept` (<br>
     显示数据正常，然后关闭microservicecloud-provider-dept-8001微服务，再访问http://localhost/comsumer/dept/get/1<br>
     出现提示信息："没有没有对应的信息,Consumer客户端提供的降级信息,此刻服务Provider已经关闭"<br>
     再访问数据库中没有数据id:http://localhost/comsumer/dept/get/100<br>
-## 注意:（很重要）
+## 注意:（很重要熔断与降级不一样）
   Feign对Hystrix的支持默认是关闭的，如果想开启对Hystrix的支持，你不仅需要在application.properties中添加：<br>
   feign.hystrix.enabled=true<br>
   
